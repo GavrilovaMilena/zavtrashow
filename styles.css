@@ -20,6 +20,18 @@ body {
   margin: 0;
   display: block;
   font-family: "Montserrat", sans-serif;
+  position: relative;
+}
+body .img_one {
+  background-image: url("img/forms-pink-blur.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  width: 550px;
+  height: 450px;
+  z-index: 1;
+  left: 33px;
+  top: 150px;
 }
 body .title_container {
   background-image: url("img/codioful-formerly-gradienta-G084bO4wGDA-unsplash.jpg");
@@ -86,6 +98,30 @@ body .about_presenters {
   align-items: center;
   color: white;
   flex-direction: column;
+  margin: 30px;
+  border-radius: 35px;
+  position: relative;
+}
+body .about_presenters .img_two {
+  background-image: url("img/forms-pinkish-blur.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  width: 428px;
+  height: 447px;
+  z-index: 1;
+  right: 65px;
+  top: 120px;
+  animation: 15s linear infinite rotate;
+  transform: translate(-50%, -50%);
+}
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 body .about_presenters .about_presenters_title {
   font-weight: 400;
@@ -93,6 +129,7 @@ body .about_presenters .about_presenters_title {
 }
 body .about_presenters .text_container {
   margin: 30px 300px;
+  z-index: 1;
 }
 body .about_presenters .text_container .about_presenters_text {
   display: flex;

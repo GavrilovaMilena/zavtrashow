@@ -20,6 +20,18 @@ body {
   margin: 0;
   display: block;
   font-family: "Montserrat", sans-serif;
+  position: relative;
+  .img_one {
+    background-image: url("img/forms-pink-blur.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    width: 550px;
+    height: 450px;
+    z-index: 1;
+    left: 33px;
+    top: 150px;
+  }
   .title_container {
     background-image: url("img/codioful-formerly-gradienta-G084bO4wGDA-unsplash.jpg");
     background-repeat: no-repeat;
@@ -85,12 +97,38 @@ body {
     align-items: center;
     color: white;
     flex-direction: column;
+    margin: 30px;
+    border-radius: 35px;
+    position: relative;
+    .img_two {
+      background-image: url("img/forms-pinkish-blur.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: absolute;
+      width: 428px;
+      height: 447px;
+      z-index: 1;
+      right: 65px;
+      top: 120px;
+      animation: 15s linear infinite rotate;
+      transform: translate(-50%, -50%);
+    }
+    @keyframes rotate {
+      from {
+        transform: rotate(0deg);
+      }
+
+      to {
+        transform: rotate(360deg);
+      }
+    }
     .about_presenters_title {
       font-weight: 400;
       text-transform: uppercase;
     }
     .text_container {
       margin: 30px 300px;
+      z-index: 1;
       .about_presenters_text {
         display: flex;
         align-items: center;
