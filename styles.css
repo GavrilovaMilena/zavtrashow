@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 h1 {
   margin: 0;
 }
@@ -29,6 +33,7 @@ body .title_container {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  position: relative;
 }
 body .title_container .title_text {
   display: flex;
@@ -42,6 +47,25 @@ body .title_container .title_subtitle {
   align-items: center;
   justify-content: center;
   font-weight: 300;
+}
+body .menu_container {
+  display: flex;
+  bottom: 25px;
+  position: absolute;
+}
+body .menu_container .menu_text {
+  cursor: pointer;
+  transition: 0.5s;
+  margin-right: 40px;
+  text-decoration: none;
+  color: white;
+}
+body .menu_container .menu_text:hover {
+  color: #f0931b;
+  transition: 0.5s;
+}
+body .menu_container .menu_text:last-child {
+  margin-right: 0;
 }
 body .about-show_container {
   color: black;
